@@ -45,12 +45,12 @@ body {
 
 .section__title {
   font-size: 48px;
-  font-family: var(--bf);
+  font-family: var(--bf), "Roboto";
   color: var(--blue);
   text-transform: uppercase;
 }
 .section__title span {
-  font-family: var(--bf);
+  font-family: var(--bf), "Roboto";
 }
 
 .title__center {
@@ -212,7 +212,7 @@ body {
   text-align: center;
 }
 .top__order-field .top__order-content .top__order-oldprice {
-  font-family: var(--bf);
+  font-family: var(--bf), "Roboto";
   color: var(--blue);
   font-size: 32px;
   position: relative;
@@ -221,7 +221,7 @@ body {
   margin-bottom: -20px;
 }
 .top__order-field .top__order-content .top__order-oldprice span {
-  font-family: var(--bf);
+  font-family: var(--bf), "Roboto";
   font-size: 18px;
 }
 .top__order-field .top__order-content .top__order-oldprice::before {
@@ -237,14 +237,14 @@ body {
   margin: auto;
 }
 .top__order-field .top__order-content .top__order-price {
-  font-family: var(--bf);
+  font-family: var(--bf), "Roboto";
   color: var(--red);
   font-size: 72px;
   text-transform: uppercase;
 }
 .top__order-field .top__order-content .top__order-price span {
   font-size: 46px;
-  font-family: var(--bf);
+  font-family: var(--bf), "Roboto";
 }
 .top__order-field .top__order-content .top__order-button {
   background: #ff384a;
@@ -349,18 +349,18 @@ body {
   box-shadow: 0px 5.90398px 5.90398px rgba(51, 26, 27, 0.07);
 }
 .inside__box-item .inside__box-title {
-  font-family: var(--bf);
+  font-family: var(--bf), "Roboto";
   text-transform: uppercase;
   font-size: 30px;
   color: #000;
 }
 .inside__box-item .inside__box-title span {
   color: #030357;
-  font-family: var(--bf);
+  font-family: var(--bf), "Roboto";
   font-size: 36px;
 }
 .inside__box-item .inside__box-title-desc {
-  font-family: var(--bf);
+  font-family: var(--bf), "Roboto";
   font-size: 16px;
   color: #000;
 }
@@ -498,7 +498,7 @@ body {
 }
 
 .rules__title {
-  font-family: var(--bf);
+  font-family: var(--bf), "Roboto";
   font-size: 64px;
   text-transform: uppercase;
   color: #fff8dd;
@@ -759,7 +759,7 @@ body {
 .video-items .video-item .video-bottom .video-title {
   margin-left: 15px;
   font-size: 24px;
-  font-family: var(--bf);
+  font-family: var(--bf), "Roboto";
   color: #030357;
 }
 .video-items .video-item .video-bottom .video-title span {
@@ -1238,12 +1238,12 @@ footer * {
   }
   .section__title {
     font-size: 24px;
-    font-family: var(--bf);
+    font-family: var(--bf), "Roboto";
     color: var(--blue);
     text-transform: uppercase;
   }
   .section__title span {
-    font-family: var(--bf);
+    font-family: var(--bf), "Roboto";
   }
   .title__df span {
     margin-top: 5px;
