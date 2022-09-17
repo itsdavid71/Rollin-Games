@@ -24,477 +24,709 @@
 </head>
 
 <body>
-    <section class="main">
-        <header class="header">
+    <div class="wrapp">
+        <div class="menu__open">
+            <div class="menu-right">
+                <div class="menu-close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__menu">
+                    <a href="#about" class="menu__item">Об игре</a>
+                    <a href="#box" class="menu__item">Что в коробке?</a>
+                    <a href="#how" class="menu__item">Как играть?</a>
+                    <a href="#why" class="menu__item">Почему стоит сыграть?</a>
+                    <a href="#reviews" class="menu__item">Отзывы</a>
+                    <a href="#videos" class="menu__item">Обзоры</a>
+                    <a href="#delivery" class="menu__item">Сроки и доставка</a>
+                </div>
+            </div>
+
+        </div>
+        <section class="main">
+            <header class="header">
+                <div class="container">
+                    <div class="header__field">
+                        <div class="header__logo"></div>
+                        <div class="header__menu">
+                            <a href="#about" class="menu__item">Об игре</a>
+                            <a href="#box" class="menu__item">Что в коробке?</a>
+                            <a href="#how" class="menu__item">Как играть?</a>
+                            <a href="#why" class="menu__item">Почему стоит сыграть?</a>
+                            <a href="#reviews" class="menu__item">Отзывы</a>
+                            <a href="#videos" class="menu__item">Обзоры</a>
+                            <a href="#delivery" class="menu__item">Сроки и доставка</a>
+                            <a href="mailto:info@rollingames.ru"
+                                class="menu__item menu__item-email">info@rollingames.ru</a>
+                        </div>
+                    </div>
+                    <div class="header__mob">
+                        <div class="header__logo"></div>
+                        <div class="header__menu">
+                            <a href="mailto:info@rollingames.ru"
+                                class="menu__item menu__item-email">info@rollingames.ru</a>
+                        </div>
+                        <div class="menu__burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <div class="container">
-                <div class="header__field">
-                    <div class="header__logo"></div>
-                    <div class="header__menu">
-                        <a href="#" class="menu__item">Об игре</a>
-                        <a href="#" class="menu__item">Что в коробке?</a>
-                        <a href="#" class="menu__item">Как играть?</a>
-                        <a href="#" class="menu__item">Почему стоит сыграть?</a>
-                        <a href="#" class="menu__item">Отзывы</a>
-                        <a href="#" class="menu__item">Обзоры</a>
-                        <a href="#" class="menu__item">Сроки и доставка</a>
-                        <a href="mailto:itsdavid71@gmail.com"
-                            class="menu__item menu__item-email">info@rollingames.ru</a>
+                <div class="main__content-title">
+                    <img src="images/title.png" alt="Авиалинии Юкона">
+                </div>
+                <div class="main__content-button">
+                    <a href="#" class="main__content-button-a"></a>
+                </div>
+            </div>
+        </section>
+        <section class="top__order bg_w">
+            <div class="container">
+                <div class="top__order-field">
+                    <img src="images/box.png" alt="Авиалинии Юкона" class="top__order-box">
+                    <div class="top__order-content">
+                        <div class="top__order-oldprice">4 290<span>руб.</span></div>
+                        <div class="top__order-price">2 990 <span>руб.</span></div>
+                        <a href="#" class="top__order-button">Заказать</a>
+                        <div class="top__order-date">* цена по предзаказу до <span>31.03</span></div>
                     </div>
                 </div>
             </div>
-        </header>
-        <div class="container">
-            <div class="main__content-title">
-                <img src="images/title.png" alt="Авиалинии Юкона">
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__field">
+                    <div class="about__content">
+                        <div class="section__title">Об игре</div>
+                        <p class="about__text">В Yukon Airways на небольших гидропланах вы будете перевозить туристов,
+                            любящих экстремальные путешествия. А экстремальные потому, что Юкон — это территория на
+                            северо-западе Канады, славящаяся не только своими природными красотами, но и суровым
+                            климатом.
+                        </p>
+                        <div class="about__items">
+                            <div class="about__item">
+                                <img src="images/people.svg" alt="" class="about__item-icon">
+                                <p>1 - 4 игрока</p>
+                            </div>
+                            <div class="about__item">
+                                <img src="images/timer.svg" alt="" class="about__item-icon">
+                                <p>60 – 90 мин</p>
+                            </div>
+                            <div class="about__item">
+                                <img src="images/child_care.svg" alt="" class="about__item-icon">
+                                <p>Возраст: 14+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__box">
+                        <img src="images/box_2.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="main__content-button">
-                <a href="#" class="main__content-button-a"></a>
+        </section>
+        <section class="box bg_w" id="box">
+            <div class="container">
+                <div class="airplane"></div>
+                <div class="section__title title__df title__center title__margin"><span>Что в коробке?</span></div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="inside__box-item">
+                            <div class="inside__box-title"><span>1</span> Игровое поле</div>
+                            <img src="images/box/1.png" alt="" class="inside__box-image">
+                            <div class="inside__box-title"><span>4</span> планшета игроков</div>
+                        </div>
+
+                        <div class="inside__box-item span__second">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="inside__box-item-sm">
+                                        <div class="inside__box-title"><span>4</span> фишки <br> игроков</div>
+                                        <div class="inside__box-flex"><img src="images/box/2.png" alt=""
+                                                style="max-height: 59px;" class="inside__box-image"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="inside__box-item-sm">
+                                        <div class="inside__box-title"><span>1</span> черный маркер раундов</div>
+                                        <div class="inside__box-flex">
+                                            <img src="images/box/3.png" alt="" class="inside__box-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="inside__box-item-sm_2">
+                                        <div class="inside__box-title"><span>24</span> стрелки </div>
+                                        <p class="inside__box-title-desc">для приборной панели</p>
+
+                                        <div class="inside__box-flex"><img src="images/box/4.png" alt=""
+                                                style="max-height: 140px;" class="inside__box-image"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="inside__box-item-sm">
+                                        <div class="inside__box-title"><span>80</span> КУБИКОВ</div>
+                                        <div class="inside__box-flex">
+                                            <img src="images/box/5.png" alt="" class="inside__box-image"
+                                                style="max-height: 140px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="inside__box-item-sm_2">
+                                        <div class="inside__box-title"><span>15</span> кубов</div>
+                                        <p class="inside__box-title-desc">пассажиров</p>
+                                        <div class="inside__box-flex"><img src="images/box/6.png" alt=""
+                                                style="max-height: 140px;" class="inside__box-image"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="inside__box-item-sm">
+                                        <div class="inside__box-title"><span>4</span> гидроплана</div>
+                                        <div class="inside__box-flex">
+                                            <img src="images/box/7.png" alt="" class="inside__box-image"
+                                                style="max-height: 90px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-9 col-sm-12">
+                                    <div class="inside__box-item-sm">
+                                        <div class="inside__box-title"><span>28</span> переключателей</div>
+                                        <div class="inside__box-flex">
+                                            <img src="images/box/8.png" alt="" class="inside__box-image"
+                                                style="max-height: 180px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div class="inside__box-item span__third">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="inside__box-item-sm">
+                                        <div class="inside__box-title"><span>4</span> карты гидроплана</div>
+                                        <div class="inside__box-flex">
+                                            <img src="images/box/9.png" alt="" class="inside__box-image"
+                                                style="max-height: 240px;">
+                                        </div>
+                                    </div>
+                                    <div class="inside__box-item-sm">
+                                        <div class="inside__box-title"><span>9</span> карт целей</div>
+                                        <div class="inside__box-flex">
+                                            <img src="images/box/10.png" alt="" class="inside__box-image"
+                                                style="max-height: 230px;">
+                                        </div>
+                                    </div>
+                                    <div class="inside__box-item-sm">
+                                        <div class="inside__box-title"><span>60</span> карт купюр</div>
+                                        <div class="inside__box-flex">
+                                            <img src="images/box/11.png" alt="" class="inside__box-image"
+                                                style="max-height: 200px;">
+                                        </div>
+                                    </div>
+                                    <div class="inside__box-item-sm">
+                                        <div class="inside__box-title"><span>72</span> карты билетов</div>
+                                        <div class="inside__box-flex">
+                                            <img src="images/box/12.png" alt="" class="inside__box-image"
+                                                style="max-height: 240px;">
+                                        </div>
+                                    </div>
+                                    <div class="inside__box-item-sm">
+                                        <div class="inside__box-title"><span>4</span> карты памятки</div>
+                                        <div class="inside__box-flex">
+                                            <img src="images/box/13.png" alt="" class="inside__box-image"
+                                                style="max-height: 240px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="top__order bg_w">
-        <div class="container">
-            <div class="top__order-field">
-                <img src="images/box.png" alt="Авиалинии Юкона" class="top__order-box">
-                <div class="top__order-content">
-                    <div class="top__order-oldprice">4 290<span>руб.</span></div>
-                    <div class="top__order-price">2 990 <span>руб.</span></div>
-                    <a href="#" class="top__order-button">Заказать</a>
-                    <div class="top__order-date">* цена по предзаказу до <span>31.03</span></div>
+        </section>
+
+        <section class="how_play" id="how">
+            <div class="container">
+                <div class="section__title title__df title__center title__margin"><span>Как играть?</span></div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="how__play-item">
+                            <div class="how__play-flex">
+                                <img src="images/how/1.png" alt="" class="how__play-img how__play-img-main">
+                                <div class="how__play-img-num-flex"><img src="images/how/num/1.png" alt=""
+                                        class="how__play-img how__play-img-num"></div>
+                            </div>
+                            <div class="how__play-text">Задача игрока — за 6 дней заработать максимальное количество
+                                денег,
+                                развозя пассажиров по городам Юкона на своем гидроплане. </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="how__play-item">
+                            <div class="how__play-flex">
+                                <img src="images/how/2.png" alt="" class="how__play-img how__play-img-main">
+                                <div class="how__play-img-num-flex"><img src="images/how/num/2.png" alt=""
+                                        class="how__play-img how__play-img-num"></div>
+                            </div>
+                            <div class="how__play-text">На поле находится 13 городов, связанных маршрутами перелётов.
+                                Уайтхорс — крупнейший город на Юконе, откуда мы всегда начинаем новый день. </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="how__play-item">
+                            <div class="how__play-flex">
+                                <img src="images/how/3.png" alt="" class="how__play-img how__play-img-main">
+                                <div class="how__play-img-num-flex"><img src="images/how/num/3.png" alt=""
+                                        class="how__play-img how__play-img-num"></div>
+                            </div>
+                            <div class="how__play-text">В каждый город (кроме Уайтхорса) мы случайным образом размещаем
+                                по
+                                столько маркеров, сколько игроков за столом. Каждый маркер — это требуемая конечная
+                                точка
+                                пассажиров соответствующего цвета. Самих пассажиров символизируют кубы, которые мы
+                                бросаем в
+                                начале партии и расставляем их по шести пирсам согласно выпавшим значениям. </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="how__play-item">
+                            <div class="how__play-flex">
+                                <img src="images/how/4.png" alt="" class="how__play-img how__play-img-main">
+                                <div class="how__play-img-num-flex"><img src="images/how/num/4.png" alt=""
+                                        class="how__play-img how__play-img-num"></div>
+                            </div>
+                            <div class="how__play-text">В начале игры на поле выкладывается 3 случайные карты целей,
+                                которые
+                                дают привилегии игроку за выполнение условий, указанных на картах. </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="how__play-item">
+                            <div class="how__play-flex">
+                                <img src="images/how/5.png" alt="" class="how__play-img how__play-img-main">
+                                <div class="how__play-img-num-flex"><img src="images/how/num/5.png" alt=""
+                                        class="how__play-img how__play-img-num"></div>
+                            </div>
+                            <div class="how__play-text">Каждый игрок выбирает фишки игрока и гидроплана одного цвета,
+                                планшет и карточку своего самолета, берёт стартовые 6 карт билетов, топливо и деньги.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="how__play-item">
+                            <div class="how__play-flex">
+                                <img src="images/how/6.png" alt="" class="how__play-img how__play-img-main">
+                                <div class="how__play-img-num-flex"><img src="images/how/num/6.png" alt=""
+                                        class="how__play-img how__play-img-num"></div>
+                            </div>
+                            <div class="how__play-text">Планшет игрока состоит из двух основных частей — приборная
+                                панель
+                                самолета с индикаторами и переключателями и мини-карта для отметки посещённых городов.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="how__play-item">
+                            <div class="how__play-flex">
+                                <img src="images/how/7.png" alt="" class="how__play-img how__play-img-main">
+                                <div class="how__play-img-num-flex"><img src="images/how/num/7.png" alt=""
+                                        class="how__play-img how__play-img-num"></div>
+                            </div>
+                            <div class="how__play-text">Каждый ход игроки, начиная с первого, поочередно занимают один
+                                из
+                                свободных пирсов и получает бонус этого пирса. </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="how__play-item">
+                            <div class="how__play-flex">
+                                <img src="images/how/8.png" alt="" class="how__play-img how__play-img-main">
+                                <div class="how__play-img-num-flex"><img src="images/how/num/8.png" alt=""
+                                        class="how__play-img how__play-img-num"></div>
+                            </div>
+                            <div class="how__play-text">После этого игрок должен взять один или несколько кубов одного
+                                цвета
+                                к себе на гидроплан и получить топливо за остаток свободных мест на гидроплане. </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="how__play-item">
+                            <div class="how__play-flex">
+                                <img src="images/how/9.png" alt="" class="how__play-img how__play-img-main">
+                                <div class="how__play-img-num-flex"><img src="images/how/num/9.png" alt=""
+                                        class="how__play-img how__play-img-num"></div>
+                            </div>
+                            <div class="how__play-text">Далее пилоты начинают совершать перелёты в порядке занятых
+                                пирсов.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="how__play-item">
+                            <div class="how__play-flex">
+                                <img src="images/how/10.png" alt="" class="how__play-img how__play-img-main">
+                                <div class="how__play-img-num-flex"><img src="images/how/num/10.png" alt=""
+                                        class="how__play-img how__play-img-num"></div>
+                            </div>
+                            <div class="how__play-text">Игроки по очереди совершают любое количество перелётов, после
+                                чего
+                                получают доход. </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="how__play-item">
+                            <div class="how__play-flex">
+                                <img src="images/how/11.png" alt="" class="how__play-img how__play-img-main">
+                                <div class="how__play-img-num-flex"><img src="images/how/num/11.png" alt=""
+                                        class="how__play-img how__play-img-num"></div>
+                            </div>
+                            <div class="how__play-text">После этого игроки перебрасывают все кубы, помещают их на
+                                соответствующие пирсы, возвращают свои гидропланы в Уайтхорс, и добирают карты билетов.
+                                Затем начинается следующий ход. </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="how__play-item">
+                            <div class="how__play-flex">
+                                <img src="images/how/12.png" alt="" class="how__play-img how__play-img-main">
+                                <div class="how__play-img-num-flex"><img src="images/how/num/12.png" alt=""
+                                        class="how__play-img how__play-img-num"></div>
+                            </div>
+                            <div class="how__play-text">После шести ходов игроки получают дополнительные деньги за
+                                маркеры
+                                одного цвета (которых игрок набрал больше всего), за количество посещённых городов и за
+                                специальный индикатор-улучшение, который можно прокачать в ходе игры. Самый
+                                предприимчивый
+                                становится победителем. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rules" id="rules">
+            <div class="container">
+                <div class="rules__content">
+                    <div class="rules__main">
+                        <div class="rules__title">ПРАВИЛА игры</div>
+                        <a href="#" class="rules__link">Скачать <b>PDF</b></a>
+                    </div>
+                </div>
+                <div class="rules__content-sm">
+                    <div class="rules__main">
+                        <div class="rules__title">ПРАВИЛА игры</div>
+                        <img src="images/rules_box_2.png" alt="">
+                        <a href="#" class="rules__link">Скачать <b>PDF</b></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why_play" id="why">
+            <div class="container">
+                <div class="section__title title__df title__center title__margin title__red title__red-2"><span>ПОЧЕМУ
+                        СТОИТ
+                        СЫГРАТЬ?</span></div>
+                <div class="why__content">
+                    <div class="why__img"></div>
+                    <div class="why__text">
+                        <p>Авиалинии Юкона оставляют приятное послевкусие от оформления и механик игры. В каждой детали
+                            чувствуется любовь автора к своему творению, их цельность и внутренняя красота. Создатель
+                            игры,
+                            Аль Ледюк, вырос на Юконе, а его отец был владельцем маленькой авиакомпании. Поэтому данная
+                            тема
+                            очень близка автору, а сама игра хранит память о временах золотой лихорадки на Клондайке.
+                        </p>
+                        <p>Правила игры достаточно просты и логичны. Авиалинии Юкона — это классная атмосферная
+                            стратегия, в
+                            которую захочется играть снова и снова.</p>
+                    </div>
+                </div>
+                <div class="main-carousel">
+                    <div class="carousel-cell">
+                        <img src="images/slider/1.jpg" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/slider/2.jpg" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/slider/3.jpg" alt="">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/slider/1.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="reviews bg_w" id="reviews">
+            <div class="container">
+                <div class="blue-bg">
+                    <div class="section__title title__light title__center title__margin "><span>ОТЗЫВЫ</span></div>
+                    <div class="review-items">
+                        <div class="review-item">
+                            <img src="images/reviews/1.png" alt="Отзыв">
+                            <div class="review-content">
+                                <div class="review-name">GeekMedia, Юрий Ануфриев:</div>
+                                <div class="review-text">«Если вы хотите себе игру с достаточно простыми правилами, но
+                                    при
+                                    этом глубоким геймплеем,
+                                    если вы хотите себе надежную, проверенную временем евро игру с необычной механикой,
+                                    я
+                                    могу вам смело порекомендовать
+                                    Yukon Airways.»</div>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-content">
+                                <div class="review-name">Geek Media, Сергей Ярушок:</div>
+                                <div class="review-text">«Правила игры не очень сложные и вполне логичные,
+                                    они написаны подробно и с наглядными примерами.
+                                    Просчёт выгодных вариантов и попытка выжать максимум из текущей ситуации заставят
+                                    приятно скрипеть ваши мозги.»</div>
+                            </div>
+                            <img src="images/reviews/1.png" alt="Отзыв">
+                        </div>
+                        <div class="review-item">
+                            <img src="images/reviews/2.png" alt="Отзыв">
+                            <div class="review-content">
+                                <div class="review-name">Cactus Games:</div>
+                                <div class="review-text">«Игра просто потрясающая, мне понравилось в ней абсолютно все.
+                                    Игровой процесс здесь не подкачал, все механики очень
+                                    лаконично переплетаются между собой. Играть здесь можно действительно по разному и
+                                    сложно найти наилучший путь развития.
+                                    Эта смесь приятных механик, оформления и темы меня действительно зацепила. Смело
+                                    могу
+                                    рекомендовать ее вам.»</div>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-content">
+                                <div class="review-name">Илья Мурсеев, OMGames:</div>
+                                <div class="review-text">«Очень приятно нынче встретить подобную игру. Оригинальная
+                                    тематика
+                                    вкупе с хорошо работающей механикой манит к
+                                    приобретению в коллекцию.»</div>
+                            </div>
+                            <img src="images/reviews/3.png" alt="Отзыв">
+                        </div>
+                        <div class="review-item">
+                            <img src="images/reviews/3.png" alt="Отзыв">
+                            <div class="review-content">
+                                <div class="review-name">OMGames, Наталья Мурсеева:</div>
+                                <div class="review-text">Мне игра понравилась, мне кажется, что таких игр не хватает,
+                                    даже с
+                                    новичками в нее можно сесть играть, сделано все
+                                    классно, карты под лен, деревянные компоненты, разноцветные кубики, прекрасная игра.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-item">
+                            <div class="review-content">
+                                <div class="review-name">The Dice Tower:</div>
+                                <div class="review-text">Увлекательная настольная игра с интересной механикой, в которой
+                                    от
+                                    игры к игре вы будете пробовать различные стратегии.
+                                    Она отличается от других игр, а также она довольно простая в освоении.</div>
+                            </div>
+                            <img src="images/reviews/4.png" alt="Отзыв">
+                        </div>
+                        <div class="review-item">
+                            <img src="images/reviews/5.png" alt="Отзыв">
+                            <div class="review-content">
+                                <div class="review-name">Rahdo:</div>
+                                <div class="review-text">Я остался очень доволен игрой. Все три составляющие механики —
+                                    драфт кубов, погрузка и перевозка пассажиров и построение
+                                    собсвенного движка — отлично гармонируют между собой. А дизайн игры и все ее
+                                    элементы
+                                    вызывают восторг.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="why_play video_reviews" id="videos">
+            <div class="container">
+                <div class="section__title title__df title__center title__margin title__red"><span>обзоры</span></div>
+                <div class="video-items">
+                    <div class="video-item">
+                        <div class="video-frame">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WcVUaOt15JQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-bottom">
+                            <img src="images/reviews/1.png" alt="">
+                            <div class="video-title">GeekMedia</div>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-frame">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WcVUaOt15JQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-bottom">
+                            <img src="images/reviews/2.png" alt="">
+                            <div class="video-title">Cactus Games</div>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-frame">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WcVUaOt15JQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-bottom">
+                            <img src="images/reviews/4.png" alt="">
+                            <div class="video-title">The Dice Tower <span>Обзор на английском языке</span></div>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-frame">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WcVUaOt15JQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-bottom">
+                            <img src="images/reviews/3.png" alt="">
+                            <div class="video-title">OMGames</div>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-frame">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WcVUaOt15JQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-bottom">
+                            <img src="images/reviews/5.png" alt="">
+                            <div class="video-title">Rahdo <span>Обзор на английском языке</span></div>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-frame">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/WcVUaOt15JQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="video-bottom">
+                            <img src="images/reviews/3.png" alt="">
+                            <div class="video-title">OMGames</div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="sites" id="sites">
+                    <div class="section__title title__df title__center title__margin title__sites"><span>страницы игры
+                            на
+                            сайтах</span></div>
+                    <div class="site-items">
+                        <a href="https://nastol.io/" target="_blank" class="site-item">
+                            <img src="images/s1.png" alt="">
+                            <div>nastol.io</div>
+                        </a>
+                        <a href="https://boardgamegeek.com/" target="_blank" class="site-item">
+                            <img src="images/s2.png" alt="">
+                            <div>boardgamegeek.com</div>
+                        </a>
+                        <a href="https://tesera.ru/" target="_blank" class="site-item">
+                            <img src="images/s3.png" alt="">
+                            <div>tesera.ru</div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <div class="order" id="order">
+            <div class="order-items">
+                <div class="order-left">
+                    <div class="order-price">
+                        <p>2 990 руб.*</p>
+                        <span>* Предзаказ до 31.03</span>
+                    </div>
+                </div>
+                <div class="order-right">
+                    <div class="order-price">
+                        <p>4 290 руб.</p>
+                        <span>Планируемая РРЦ в России</span>
+                    </div>
+                </div>
+                <div class="order-btn-field">
+                    <a href="#" class="order-btn">Заказать</a>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="about">
-        <div class="container">
-            <div class="about__field">
-                <div class="about__content">
-                    <div class="section__title">Об игре</div>
-                    <p class="about__text">В Yukon Airways на небольших гидропланах вы будете перевозить туристов,
-                        любящих экстремальные путешествия. А экстремальные потому, что Юкон — это территория на
-                        северо-западе Канады, славящаяся не только своими природными красотами, но и суровым климатом.
+        <section class="delivery" id="delivery">
+            <div class="section__title title__df title__center title__margin title__delivery"><span>Сроки и
+                    доставка</span>
+            </div>
+            <div class="delivery-items">
+                <div class="delivery-item">
+                    <p class="delivery-title">Платная доставка:</p>
+                    <p class="delivery-text">через СДЭК или Почтой России в любой доступный город — при оформлении
+                        заказа.</p>
+                </div>
+                <div class="delivery-item">
+                    <p class="delivery-title">Бесплатная доставка:</p>
+                    <p class="delivery-text">в партнерские пункты самовывоза: <br>
+                        - Москва - Игротайм (адрес м.Преображенская пл., ул.Суворовская, д. 22) <br>
+                        - Санкт-Петербург - FunMill (адрес Санкт-Петербург, Литейный проспект, дом 60) <br>
+                        - Новосибирск - Два Кота (адрес Новосибирск, по. Димитрова, 5)
                     </p>
-                    <div class="about__items">
-                        <div class="about__item">
-                            <img src="images/people.svg" alt="" class="about__item-icon">
-                            <p>1 - 4 игрока</p>
-                        </div>
-                        <div class="about__item">
-                            <img src="images/timer.svg" alt="" class="about__item-icon">
-                            <p>60 – 90 мин</p>
-                        </div>
-                        <div class="about__item">
-                            <img src="images/child_care.svg" alt="" class="about__item-icon">
-                            <p>Возраст: 14+</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about__box">
-                    <img src="images/box_2.png" alt="">
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="box bg_w">
-        <div class="container">
-            <div class="airplane"></div>
-            <div class="section__title title__df title__center title__margin"><span>Что в коробке?</span></div>
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <div class="inside__box-item">
-                        <div class="inside__box-title"><span>1</span> Игровое поле</div>
-                        <img src="images/box/1.png" alt="" class="inside__box-image">
-                        <div class="inside__box-title"><span>4</span> планшета игроков</div>
-                    </div>
+        </section>
 
-                    <div class="inside__box-item span__second">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                                <div class="inside__box-item-sm">
-                                    <div class="inside__box-title"><span>4</span> фишки <br> игроков</div>
-                                    <div class="inside__box-flex"><img src="images/box/2.png" alt=""
-                                            style="max-height: 59px;" class="inside__box-image"></div>
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="socials">
+                                <p>Свяжитесь с нами:</p>
+                                <div class="icons">
+                                    <a href="#" class="inst"></a>
+                                    <a href="#" class="vk"></a>
+                                    <a href="#" class="fb"></a>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="inside__box-item-sm">
-                                    <div class="inside__box-title"><span>1</span> черный маркер раундов</div>
-                                    <div class="inside__box-flex">
-                                        <img src="images/box/3.png" alt="" class="inside__box-image">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="inside__box-item-sm_2">
-                                    <div class="inside__box-title"><span>24</span> стрелки </div>
-                                    <p class="inside__box-title-desc">для приборной панели</p>
-
-                                    <div class="inside__box-flex"><img src="images/box/4.png" alt=""
-                                            style="max-height: 140px;" class="inside__box-image"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="inside__box-item-sm">
-                                    <div class="inside__box-title"><span>80</span> КУБИКОВ</div>
-                                    <div class="inside__box-flex">
-                                        <img src="images/box/5.png" alt="" class="inside__box-image"
-                                            style="max-height: 140px;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="inside__box-item-sm_2">
-                                    <div class="inside__box-title"><span>15</span> кубов</div>
-                                    <p class="inside__box-title-desc">пассажиров</p>
-                                    <div class="inside__box-flex"><img src="images/box/6.png" alt=""
-                                            style="max-height: 140px;" class="inside__box-image"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12">
-                                <div class="inside__box-item-sm">
-                                    <div class="inside__box-title"><span>4</span> гидроплана</div>
-                                    <div class="inside__box-flex">
-                                        <img src="images/box/7.png" alt="" class="inside__box-image"
-                                            style="max-height: 90px;">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-9 col-sm-12">
-                                <div class="inside__box-item-sm">
-                                    <div class="inside__box-title"><span>28</span> переключателей</div>
-                                    <div class="inside__box-flex">
-                                        <img src="images/box/8.png" alt="" class="inside__box-image"
-                                            style="max-height: 180px;">
-                                    </div>
-                                </div>
-                            </div>
+                            <span>info@rollingames.ru</span>
+                            <br><br>
                         </div>
-                    </div>
-
-                </div>
-                <div class="col-md-6">
-                    <div class="inside__box-item span__third">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12">
-                                <div class="inside__box-item-sm">
-                                    <div class="inside__box-title"><span>4</span> карты гидроплана</div>
-                                    <div class="inside__box-flex">
-                                        <img src="images/box/9.png" alt="" class="inside__box-image"
-                                            style="max-height: 240px;">
-                                    </div>
-                                </div>
-                                <div class="inside__box-item-sm">
-                                    <div class="inside__box-title"><span>9</span> карт целей</div>
-                                    <div class="inside__box-flex">
-                                        <img src="images/box/10.png" alt="" class="inside__box-image"
-                                            style="max-height: 230px;">
-                                    </div>
-                                </div>
-                                <div class="inside__box-item-sm">
-                                    <div class="inside__box-title"><span>60</span> карт купюр</div>
-                                    <div class="inside__box-flex">
-                                        <img src="images/box/11.png" alt="" class="inside__box-image"
-                                            style="max-height: 200px;">
-                                    </div>
-                                </div>
-                                <div class="inside__box-item-sm">
-                                    <div class="inside__box-title"><span>72</span> карты билетов</div>
-                                    <div class="inside__box-flex">
-                                        <img src="images/box/12.png" alt="" class="inside__box-image"
-                                            style="max-height: 240px;">
-                                    </div>
-                                </div>
-                                <div class="inside__box-item-sm">
-                                    <div class="inside__box-title"><span>4</span> карты памятки</div>
-                                    <div class="inside__box-flex">
-                                        <img src="images/box/13.png" alt="" class="inside__box-image"
-                                            style="max-height: 240px;">
-                                    </div>
-                                </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <p>Страницы игры на сайтах:</p>
+                            <div class="footer-links">
+                                <a target="_blank" href="https://nastol.io/">Nastol.io</a>
+                                <a target="_blank" href="https://boardgamegeek.com/">BoardGameGeek</a>
+                                <a target="_blank" href="https://tesera.ru/">Tesera.ru</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="how_play">
-        <div class="container">
-            <div class="section__title title__df title__center title__margin"><span>Как играть?</span></div>
-            <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <div class="how__play-item">
-                        <div class="how__play-flex">
-                            <img src="images/how/1.png" alt="" class="how__play-img how__play-img-main">
-                            <div class="how__play-img-num-flex"><img src="images/how/num/1.png" alt=""
-                                    class="how__play-img how__play-img-num"></div>
-                        </div>
-                        <div class="how__play-text">Задача игрока — за 6 дней заработать максимальное количество денег,
-                            развозя пассажиров по городам Юкона на своем гидроплане. </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="how__play-item">
-                        <div class="how__play-flex">
-                            <img src="images/how/2.png" alt="" class="how__play-img how__play-img-main">
-                            <div class="how__play-img-num-flex"><img src="images/how/num/2.png" alt=""
-                                    class="how__play-img how__play-img-num"></div>
-                        </div>
-                        <div class="how__play-text">На поле находится 13 городов, связанных маршрутами перелётов.
-                            Уайтхорс — крупнейший город на Юконе, откуда мы всегда начинаем новый день. </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="how__play-item">
-                        <div class="how__play-flex">
-                            <img src="images/how/3.png" alt="" class="how__play-img how__play-img-main">
-                            <div class="how__play-img-num-flex"><img src="images/how/num/3.png" alt=""
-                                    class="how__play-img how__play-img-num"></div>
-                        </div>
-                        <div class="how__play-text">В каждый город (кроме Уайтхорса) мы случайным образом размещаем по
-                            столько маркеров, сколько игроков за столом. Каждый маркер — это требуемая конечная точка
-                            пассажиров соответствующего цвета. Самих пассажиров символизируют кубы, которые мы бросаем в
-                            начале партии и расставляем их по шести пирсам согласно выпавшим значениям. </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="how__play-item">
-                        <div class="how__play-flex">
-                            <img src="images/how/4.png" alt="" class="how__play-img how__play-img-main">
-                            <div class="how__play-img-num-flex"><img src="images/how/num/4.png" alt=""
-                                    class="how__play-img how__play-img-num"></div>
-                        </div>
-                        <div class="how__play-text">В начале игры на поле выкладывается 3 случайные карты целей, которые
-                            дают привилегии игроку за выполнение условий, указанных на картах. </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="how__play-item">
-                        <div class="how__play-flex">
-                            <img src="images/how/5.png" alt="" class="how__play-img how__play-img-main">
-                            <div class="how__play-img-num-flex"><img src="images/how/num/5.png" alt=""
-                                    class="how__play-img how__play-img-num"></div>
-                        </div>
-                        <div class="how__play-text">Каждый игрок выбирает фишки игрока и гидроплана одного цвета,
-                            планшет и карточку своего самолета, берёт стартовые 6 карт билетов, топливо и деньги. </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="how__play-item">
-                        <div class="how__play-flex">
-                            <img src="images/how/6.png" alt="" class="how__play-img how__play-img-main">
-                            <div class="how__play-img-num-flex"><img src="images/how/num/6.png" alt=""
-                                    class="how__play-img how__play-img-num"></div>
-                        </div>
-                        <div class="how__play-text">Планшет игрока состоит из двух основных частей — приборная панель
-                            самолета с индикаторами и переключателями и мини-карта для отметки посещённых городов.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="how__play-item">
-                        <div class="how__play-flex">
-                            <img src="images/how/7.png" alt="" class="how__play-img how__play-img-main">
-                            <div class="how__play-img-num-flex"><img src="images/how/num/7.png" alt=""
-                                    class="how__play-img how__play-img-num"></div>
-                        </div>
-                        <div class="how__play-text">Каждый ход игроки, начиная с первого, поочередно занимают один из
-                            свободных пирсов и получает бонус этого пирса. </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="how__play-item">
-                        <div class="how__play-flex">
-                            <img src="images/how/8.png" alt="" class="how__play-img how__play-img-main">
-                            <div class="how__play-img-num-flex"><img src="images/how/num/8.png" alt=""
-                                    class="how__play-img how__play-img-num"></div>
-                        </div>
-                        <div class="how__play-text">После этого игрок должен взять один или несколько кубов одного цвета
-                            к себе на гидроплан и получить топливо за остаток свободных мест на гидроплане. </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="how__play-item">
-                        <div class="how__play-flex">
-                            <img src="images/how/9.png" alt="" class="how__play-img how__play-img-main">
-                            <div class="how__play-img-num-flex"><img src="images/how/num/9.png" alt=""
-                                    class="how__play-img how__play-img-num"></div>
-                        </div>
-                        <div class="how__play-text">Далее пилоты начинают совершать перелёты в порядке занятых пирсов.
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="how__play-item">
-                        <div class="how__play-flex">
-                            <img src="images/how/10.png" alt="" class="how__play-img how__play-img-main">
-                            <div class="how__play-img-num-flex"><img src="images/how/num/10.png" alt=""
-                                    class="how__play-img how__play-img-num"></div>
-                        </div>
-                        <div class="how__play-text">Игроки по очереди совершают любое количество перелётов, после чего
-                            получают доход. </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="how__play-item">
-                        <div class="how__play-flex">
-                            <img src="images/how/11.png" alt="" class="how__play-img how__play-img-main">
-                            <div class="how__play-img-num-flex"><img src="images/how/num/11.png" alt=""
-                                    class="how__play-img how__play-img-num"></div>
-                        </div>
-                        <div class="how__play-text">После этого игроки перебрасывают все кубы, помещают их на
-                            соответствующие пирсы, возвращают свои гидропланы в Уайтхорс, и добирают карты билетов.
-                            Затем начинается следующий ход. </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="how__play-item">
-                        <div class="how__play-flex">
-                            <img src="images/how/12.png" alt="" class="how__play-img how__play-img-main">
-                            <div class="how__play-img-num-flex"><img src="images/how/num/12.png" alt=""
-                                    class="how__play-img how__play-img-num"></div>
-                        </div>
-                        <div class="how__play-text">После шести ходов игроки получают дополнительные деньги за маркеры
-                            одного цвета (которых игрок набрал больше всего), за количество посещённых городов и за
-                            специальный индикатор-улучшение, который можно прокачать в ходе игры. Самый предприимчивый
-                            становится победителем. </div>
-                    </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>© RollinGames, 2022</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="rules">
-        <div class="container">
-            <div class="rules__content">
-                <div class="rules__main">
-                    <div class="rules__title">ПРАВИЛА игры</div>
-                    <a href="#" class="rules__link">Скачать <b>PDF</b></a>
-                </div>
-            </div>
-            <div class="rules__content-sm">
-                <div class="rules__main">
-                    <div class="rules__title">ПРАВИЛА игры</div>
-                    <img src="images/rules_box_2.png" alt="">
-                    <a href="#" class="rules__link">Скачать <b>PDF</b></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="why_play">
-        <div class="container">
-            <div class="section__title title__df title__center title__margin title__red"><span>ПОЧЕМУ СТОИТ
-                    СЫГРАТЬ?</span></div>
-            <div class="why__content">
-                <div class="why__img"></div>
-                <div class="why__text">
-                    <p>Авиалинии Юкона оставляют приятное послевкусие от оформления и механик игры. В каждой детали
-                        чувствуется любовь автора к своему творению, их цельность и внутренняя красота. Создатель игры,
-                        Аль Ледюк, вырос на Юконе, а его отец был владельцем маленькой авиакомпании. Поэтому данная тема
-                        очень близка автору, а сама игра хранит память о временах золотой лихорадки на Клондайке.</p>
-                    <p>Правила игры достаточно просты и логичны. Авиалинии Юкона — это классная атмосферная стратегия, в
-                        которую захочется играть снова и снова.</p>
-                </div>
-            </div>
-            <div class="main-carousel">
-                <div class="carousel-cell">
-                    <img src="images/slider/1.jpg" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img src="images/slider/2.jpg" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img src="images/slider/3.jpg" alt="">
-                </div>
-                <div class="carousel-cell">
-                    <img src="images/slider/1.jpg" alt="">
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="reviews bg_w">
-        <div class="container">
-            <div class="blue-bg">
-                <div class="section__title title__light title__center title__margin "><span>ОТЗЫВЫ</span></div>
-                <div class="review-items">
-                    <div class="review-item">
-                        <img src="images/reviews/1.png" alt="Отзыв">
-                        <div class="review-content">
-                            <div class="review-name">GeekMedia, Юрий Ануфриев:</div>
-                            <div class="review-text">«Если вы хотите себе игру с достаточно простыми правилами, но при
-                                этом глубоким геймплеем,
-                                если вы хотите себе надежную, проверенную временем евро игру с необычной механикой, я
-                                могу вам смело порекомендовать
-                                Yukon Airways.»</div>
-                        </div>
-                    </div>
-                    <div class="review-item">
-                        <div class="review-content">
-                            <div class="review-name">Geek Media, Сергей Ярушок:</div>
-                            <div class="review-text">«Правила игры не очень сложные и вполне логичные,
-                                они написаны подробно и с наглядными примерами.
-                                Просчёт выгодных вариантов и попытка выжать максимум из текущей ситуации заставят
-                                приятно скрипеть ваши мозги.»</div>
-                        </div>
-                        <img src="images/reviews/1.png" alt="Отзыв">
-                    </div>
-                    <div class="review-item">
-                        <img src="images/reviews/2.png" alt="Отзыв">
-                        <div class="review-content">
-                            <div class="review-name">Cactus Games:</div>
-                            <div class="review-text">«Игра просто потрясающая, мне понравилось в ней абсолютно все.
-                                Игровой процесс здесь не подкачал, все механики очень
-                                лаконично переплетаются между собой. Играть здесь можно действительно по разному и
-                                сложно найти наилучший путь развития.
-                                Эта смесь приятных механик, оформления и темы меня действительно зацепила. Смело могу
-                                рекомендовать ее вам.»</div>
-                        </div>
-                    </div>
-                    <div class="review-item">
-                        <div class="review-content">
-                            <div class="review-name">Илья Мурсеев, OMGames:</div>
-                            <div class="review-text">«Очень приятно нынче встретить подобную игру. Оригинальная тематика
-                                вкупе с хорошо работающей механикой манит к
-                                приобретению в коллекцию.»</div>
-                        </div>
-                        <img src="images/reviews/3.png" alt="Отзыв">
-                    </div>
-                    <div class="review-item">
-                        <img src="images/reviews/3.png" alt="Отзыв">
-                        <div class="review-content">
-                            <div class="review-name">OMGames, Наталья Мурсеева:</div>
-                            <div class="review-text">Мне игра понравилась, мне кажется, что таких игр не хватает, даже с
-                                новичками в нее можно сесть играть, сделано все
-                                классно, карты под лен, деревянные компоненты, разноцветные кубики, прекрасная игра.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="review-item">
-                        <div class="review-content">
-                            <div class="review-name">The Dice Tower:</div>
-                            <div class="review-text">Увлекательная настольная игра с интересной механикой, в которой от
-                                игры к игре вы будете пробовать различные стратегии.
-                                Она отличается от других игр, а также она довольно простая в освоении.</div>
-                        </div>
-                        <img src="images/reviews/4.png" alt="Отзыв">
-                    </div>
-                    <div class="review-item">
-                        <img src="images/reviews/5.png" alt="Отзыв">
-                        <div class="review-content">
-                            <div class="review-name">Rahdo:</div>
-                            <div class="review-text">Я остался очень доволен игрой. Все три составляющие механики —
-                                драфт кубов, погрузка и перевозка пассажиров и построение
-                                собсвенного движка — отлично гармонируют между собой. А дизайн игры и все ее элементы
-                                вызывают восторг.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
