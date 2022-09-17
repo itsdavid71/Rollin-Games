@@ -32,7 +32,7 @@ p {
   --index: calc(1vh + 1vh);
   --blue: #030357;
   --red: #ff394b;
-  --bf: "Bellatiez";
+  --bf: "Bellatiez", "Roboto", sans-serif;
 }
 
 body {
@@ -698,7 +698,7 @@ body {
   .review-content {
     margin: 0 20px;
     .review-name {
-      font-family: "Futura";
+      font-family: "Futura", "Roboto", sans-serif;
       color: #ebd599;
       font-size: 24px;
     }
@@ -821,7 +821,7 @@ body {
       no-repeat;
   }
   * {
-    font-family: "Futura";
+    font-family: "Futura", "Roboto", sans-serif;
   }
   .delivery-items {
     max-width: 1000px;
@@ -867,7 +867,7 @@ body {
         text-align: center;
         p {
           color: #ffeab1;
-          font-family: "Futura";
+          font-family: "Futura", "Roboto", sans-serif;
           font-size: 48px;
         }
         span {
@@ -888,7 +888,7 @@ body {
         text-align: center;
         p {
           color: #403f3f;
-          font-family: "Futura";
+          font-family: "Futura", "Roboto", sans-serif;
           font-size: 48px;
         }
         span {
@@ -941,7 +941,7 @@ body {
       text-align: center;
       color: #030357;
       font-size: 24px;
-      font-family: "Futura";
+      font-family: "Futura", "Roboto", sans-serif;
       margin-top: 10px;
     }
   }
@@ -949,7 +949,7 @@ body {
 
 footer {
   * {
-    font-family: "Futura";
+    font-family: "Futura", "Roboto", sans-serif;
   }
 }
 
@@ -989,7 +989,7 @@ footer {
     text-align: center;
   }
   p {
-    font-family: "Futura";
+    font-family: "Futura", "Roboto", sans-serif;
     font-size: 18px;
   }
 }

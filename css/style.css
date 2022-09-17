@@ -30,7 +30,7 @@ p {
   --index: calc(1vh + 1vh);
   --blue: #030357;
   --red: #ff394b;
-  --bf: "Bellatiez";
+  --bf: "Bellatiez", "Roboto", sans-serif;
 }
 
 body {
@@ -667,7 +667,7 @@ body {
   margin: 0 20px;
 }
 .review-item .review-content .review-name {
-  font-family: "Futura";
+  font-family: "Futura", "Roboto", sans-serif;
   color: #ebd599;
   font-size: 24px;
 }
@@ -786,7 +786,7 @@ body {
   background: url("../images/title-delivery.png") center center/contain no-repeat;
 }
 .delivery * {
-  font-family: "Futura";
+  font-family: "Futura", "Roboto", sans-serif;
 }
 .delivery .delivery-items {
   max-width: 1000px;
@@ -834,7 +834,7 @@ body {
 }
 .order .order-items .order-left .order-price p {
   color: #ffeab1;
-  font-family: "Futura";
+  font-family: "Futura", "Roboto", sans-serif;
   font-size: 48px;
 }
 .order .order-items .order-left .order-price span {
@@ -854,7 +854,7 @@ body {
 }
 .order .order-items .order-right .order-price p {
   color: #403f3f;
-  font-family: "Futura";
+  font-family: "Futura", "Roboto", sans-serif;
   font-size: 48px;
 }
 .order .order-items .order-right .order-price span {
@@ -904,12 +904,12 @@ body {
   text-align: center;
   color: #030357;
   font-size: 24px;
-  font-family: "Futura";
+  font-family: "Futura", "Roboto", sans-serif;
   margin-top: 10px;
 }
 
 footer * {
-  font-family: "Futura";
+  font-family: "Futura", "Roboto", sans-serif;
 }
 
 .footer-top {
@@ -951,7 +951,7 @@ footer * {
   text-align: center;
 }
 .footer-bottom p {
-  font-family: "Futura";
+  font-family: "Futura", "Roboto", sans-serif;
   font-size: 18px;
 }
 
