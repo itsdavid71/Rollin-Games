@@ -158,6 +158,10 @@ body {
   text-decoration: underline;
 }
 
+.menu__open {
+  display: none;
+}
+
 .main__content-title {
   display: flex;
   align-items: center;
