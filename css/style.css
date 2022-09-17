@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Bellatiez";
-  src: url("../fonts/Bellatiez.ttf");
-  src: local("../fonts/Bellatiez.ttf"), local("../fonts/Bellatiez.ttf"), url("../fonts/Bellatiez.ttf") format("truetype");
+  src: url("../fonts/Bellatiez.woff2");
+  src: local("../fonts/Bellatiez.woff2"), local("../fonts/Bellatiez.woff2"), url("../fonts/Bellatiez.woff2") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
