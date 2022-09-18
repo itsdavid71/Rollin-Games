@@ -1,3 +1,15 @@
+
+<?php
+
+$json = file_get_contents('admin/settings.json');
+// Decode the JSON file
+$settings = json_decode($json, true);
+
+$json_data = file_get_contents('admin/content.json');
+// Decode the JSON file
+$data = json_decode($json_data, true);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +17,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Авиалинии Юкона</title>
+    <title><?php echo $settings['title'] ?></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -79,7 +91,7 @@
                     <img src="images/title.png" alt="Авиалинии Юкона">
                 </div>
                 <div class="main__content-button">
-                    <a href="#" class="main__content-button-a"></a>
+                    <a href="#about" class="main__content-button-a"></a>
                 </div>
             </div>
         </section>
@@ -88,10 +100,10 @@
                 <div class="top__order-field">
                     <img src="images/box.png" alt="Авиалинии Юкона" class="top__order-box">
                     <div class="top__order-content">
-                        <div class="top__order-oldprice">4 290<span>руб.</span></div>
-                        <div class="top__order-price">2 990 <span>руб.</span></div>
-                        <a href="#" class="top__order-button">Заказать</a>
-                        <div class="top__order-date">* цена по предзаказу до <span>31.03</span></div>
+                        <div class="top__order-oldprice"><?php echo $settings['price'] ?><span>руб.</span></div>
+                        <div class="top__order-price"><?php echo $settings['price_red'] ?> <span>руб.</span></div>
+                        <a href="<?php echo $settings['link'] ?>" class="top__order-button">Заказать</a>
+                        <div class="top__order-date">* цена по предзаказу до <span><?php echo date('d.m.Y',strtotime($settings['pre_order'])) ?></span></div>
                     </div>
                 </div>
             </div>
@@ -100,24 +112,21 @@
             <div class="container">
                 <div class="about__field">
                     <div class="about__content">
-                        <div class="section__title">Об игре</div>
-                        <p class="about__text">В Yukon Airways на небольших гидропланах вы будете перевозить туристов,
-                            любящих экстремальные путешествия. А экстремальные потому, что Юкон — это территория на
-                            северо-западе Канады, славящаяся не только своими природными красотами, но и суровым
-                            климатом.
+                        <p class="section__title">Об игре</p>
+                        <p class="about__text"><?php echo $data['about_text'] ?>
                         </p>
                         <div class="about__items">
                             <div class="about__item">
                                 <img src="images/people.svg" alt="" class="about__item-icon">
-                                <p>1 - 4 игрока</p>
+                                <p><?php echo $data['about_players'] ?></p>
                             </div>
                             <div class="about__item">
                                 <img src="images/timer.svg" alt="" class="about__item-icon">
-                                <p>60 – 90 мин</p>
+                                <p><?php echo $data['about_time'] ?></p>
                             </div>
                             <div class="about__item">
                                 <img src="images/child_care.svg" alt="" class="about__item-icon">
-                                <p>Возраст: 14+</p>
+                                <p><?php echo $data['about_age'] ?></p>
                             </div>
                         </div>
                     </div>
@@ -657,18 +666,18 @@
             <div class="order-items">
                 <div class="order-left">
                     <div class="order-price">
-                        <p>2 990 руб.*</p>
-                        <span>* Предзаказ до 31.03</span>
+                        <p><?php echo $settings['price_red'] ?> руб.*</p>
+                        <span>* Предзаказ до <?php echo date('d.m.Y',strtotime($settings['pre_order'])) ?></span>
                     </div>
                 </div>
                 <div class="order-right">
                     <div class="order-price">
-                        <p>4 290 руб.</p>
+                        <p><?php echo $settings['price'] ?> руб.</p>
                         <span>Планируемая РРЦ в России</span>
                     </div>
                 </div>
                 <div class="order-btn-field">
-                    <a href="#" class="order-btn">Заказать</a>
+                    <a href="<?php echo $settings['link'] ?>" class="order-btn">Заказать</a>
                 </div>
             </div>
         </div>
@@ -679,15 +688,11 @@
             <div class="delivery-items">
                 <div class="delivery-item">
                     <p class="delivery-title">Платная доставка:</p>
-                    <p class="delivery-text">через СДЭК или Почтой России в любой доступный город — при оформлении
-                        заказа.</p>
+                    <p class="delivery-text"><?php echo $data['delivery'] ?></p>
                 </div>
                 <div class="delivery-item">
                     <p class="delivery-title">Бесплатная доставка:</p>
-                    <p class="delivery-text">в партнерские пункты самовывоза: <br>
-                        - Москва - Игротайм (адрес м.Преображенская пл., ул.Суворовская, д. 22) <br>
-                        - Санкт-Петербург - FunMill (адрес Санкт-Петербург, Литейный проспект, дом 60) <br>
-                        - Новосибирск - Два Кота (адрес Новосибирск, по. Димитрова, 5)
+                    <p class="delivery-text"><?php echo $data['delivery_free'] ?>
                     </p>
                 </div>
             </div>
@@ -701,9 +706,9 @@
                             <div class="socials">
                                 <p>Свяжитесь с нами:</p>
                                 <div class="icons">
-                                    <a href="#" class="inst"></a>
-                                    <a href="#" class="vk"></a>
-                                    <a href="#" class="fb"></a>
+                                    <a target="_blank" href="<?php echo $settings['inst'] ?>" class="inst"></a>
+                                    <a target="_blank" href="<?php echo $settings['vk'] ?>" class="vk"></a>
+                                    <a target="_blank" href="<?php echo $settings['fb'] ?>" class="fb"></a>
                                 </div>
                             </div>
                             <span>info@rollingames.ru</span>
@@ -722,7 +727,7 @@
             </div>
             <div class="footer-bottom">
                 <div class="container">
-                    <p>© RollinGames, 2022</p>
+                    <p><?php echo $settings['copyright'] ?></p>
                 </div>
             </div>
         </footer>
@@ -736,6 +741,8 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+
+    
 </body>
 
 </html>
