@@ -68,15 +68,15 @@ $data = json_decode($json_data, true);
                             <a href="#reviews" class="menu__item">Отзывы</a>
                             <a href="#videos" class="menu__item">Обзоры</a>
                             <a href="#delivery" class="menu__item">Сроки и доставка</a>
-                            <a href="mailto:info@rollingames.ru"
-                                class="menu__item menu__item-email">info@rollingames.ru</a>
+                            <a href="mailto:<?php echo $settings['email'] ?>"
+                                class="menu__item menu__item-email"><?php echo $settings['email'] ?></a>
                         </div>
                     </div>
                     <div class="header__mob">
                         <div class="header__logo"></div>
                         <div class="header__menu">
-                            <a href="mailto:info@rollingames.ru"
-                                class="menu__item menu__item-email">info@rollingames.ru</a>
+                            <a href="mailto:<?php echo $settings['email'] ?>"
+                                class="menu__item menu__item-email"><?php echo $settings['email'] ?></a>
                         </div>
                         <div class="menu__burger">
                             <span></span>
@@ -102,7 +102,7 @@ $data = json_decode($json_data, true);
                     <div class="top__order-content">
                         <div class="top__order-oldprice"><?php echo $settings['price'] ?><span>руб.</span></div>
                         <div class="top__order-price"><?php echo $settings['price_red'] ?> <span>руб.</span></div>
-                        <a href="<?php echo $settings['link'] ?>" class="top__order-button">Заказать</a>
+                        <a href="<?php echo $settings['link'] ?>" target="_blank" class="top__order-button">Заказать</a>
                         <div class="top__order-date">* цена по предзаказу до <span><?php echo date('d.m.Y',strtotime($settings['pre_order'])) ?></span></div>
                     </div>
                 </div>
@@ -424,14 +424,14 @@ $data = json_decode($json_data, true);
                 <div class="rules__content">
                     <div class="rules__main">
                         <div class="rules__title">ПРАВИЛА игры</div>
-                        <a href="#" class="rules__link">Скачать <b>PDF</b></a>
+                        <a href="uploads/rules.pdf" target="_blank" class="rules__link">Скачать <b>PDF</b></a>
                     </div>
                 </div>
                 <div class="rules__content-sm">
                     <div class="rules__main">
                         <div class="rules__title">ПРАВИЛА игры</div>
                         <img src="images/rules_box_2.png" alt="">
-                        <a href="#" class="rules__link">Скачать <b>PDF</b></a>
+                        <a href="uploads/rules.pdf" target="_blank" class="rules__link">Скачать <b>PDF</b></a>
                     </div>
                 </div>
             </div>
@@ -445,16 +445,7 @@ $data = json_decode($json_data, true);
                 <div class="why__content">
                     <div class="why__img"></div>
                     <div class="why__text">
-                        <p>Авиалинии Юкона оставляют приятное послевкусие от оформления и механик игры. В каждой детали
-                            чувствуется любовь автора к своему творению, их цельность и внутренняя красота. Создатель
-                            игры,
-                            Аль Ледюк, вырос на Юконе, а его отец был владельцем маленькой авиакомпании. Поэтому данная
-                            тема
-                            очень близка автору, а сама игра хранит память о временах золотой лихорадки на Клондайке.
-                        </p>
-                        <p>Правила игры достаточно просты и логичны. Авиалинии Юкона — это классная атмосферная
-                            стратегия, в
-                            которую захочется играть снова и снова.</p>
+                        <?php echo $data['why_text'] ?>
                     </div>
                 </div>
                 <div class="main-carousel">
@@ -677,7 +668,7 @@ $data = json_decode($json_data, true);
                     </div>
                 </div>
                 <div class="order-btn-field">
-                    <a href="<?php echo $settings['link'] ?>" class="order-btn">Заказать</a>
+                    <a href="<?php echo $settings['link'] ?>" target="_blank"  class="order-btn">Заказать</a>
                 </div>
             </div>
         </div>
@@ -711,7 +702,7 @@ $data = json_decode($json_data, true);
                                     <a target="_blank" href="<?php echo $settings['fb'] ?>" class="fb"></a>
                                 </div>
                             </div>
-                            <span>info@rollingames.ru</span>
+                            <span><?php echo $settings['email'] ?></span>
                             <br><br>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
